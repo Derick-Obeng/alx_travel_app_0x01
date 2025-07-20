@@ -8,7 +8,7 @@ We start with DRF’s generic class‑based views so we get CRUD quickly.
 
 from rest_framework import generics
 from .models import Listing
-from .serializers import ListingSerializer
+from .serialisers import ListingSerializer
 
 class ListingListCreateView(generics.ListCreateAPIView):
     """
