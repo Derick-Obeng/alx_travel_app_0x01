@@ -3,11 +3,11 @@ Here’s a simple, clear `README.md` for your `alx_travel_app_0x00` project, tai
 ---
 
 ```markdown
-# ALX Travel App 0x00
+ ALX Travel App 0x00
 
 This Django project is a simple travel booking API that allows users to view listings, make bookings, and leave reviews.
 
-## 📁 Project Structure
+Project Structure
 
 ```
 
@@ -25,59 +25,59 @@ alx\_travel\_app\_0x00/
 
 ````
 
----
 
-## ✨ Features
 
-- **Listings**: Travel experiences or packages.
-- **Bookings**: Users can book listings.
-- **Reviews**: Users can leave reviews for listings.
+Features
 
----
-
-## 🧱 Models
-
-### `Listing`
-- `title`: short name of the listing
-- `description`: detailed information
-- `location`: city, country or resort
-- `price`: cost of the package
-- `created_at`: auto timestamp
-
-### `Booking`
-- `listing`: foreign key to Listing
-- `guest_name`
-- `guest_email`
-- `start_date`, `end_date`
-- `booked_at`: auto timestamp
-
-### `Review`
-- `listing`: foreign key to Listing
-- `reviewer_name`
-- `comment`
-- `rating`: integer
-- `reviewed_at`: auto timestamp
+- Listings: Travel experiences or packages.
+- Bookings: Users can book listings.
+- Reviews: Users can leave reviews for listings.
 
 ---
 
-## 🔁 Serializers
+Models
 
-Located in `listings/serializers.py`
+Listing
+- title: short name of the listing
+- description: detailed information
+- location: city, country or resort
+- price: cost of the package
+- created_at: auto timestamp
 
-- `ListingSerializer`: Serializes all fields of `Listing`
-- `BookingSerializer`: Serializes all fields of `Booking`
+Booking
+- listing: foreign key to Listing
+- guest_name
+- guest_email
+- start_date,end_date
+- booked_at: auto timestamp
 
----
+Review
+- listing: foreign key to Listing
+- reviewer_name
+- comment
+- rating: integer
+- reviewed_at: auto timestamp
 
-## 🌱 Seeder
+
+
+Serializers
+
+Located in 'listings/serializers.py'
+
+- ListingSerializer: Serializes all fields of Listing
+- BookingSerializer: Serializes all fields of Booking
+
+
+
+Seeder
 
 Seeds the database with sample listings.
 
 ### Location:
-`listings/management/commands/seed.py`
+listings/management/commands/seed.py
 
-### To run:
-```bash
+To run:
+bash
 python manage.py seed
 ````
 
@@ -92,7 +92,7 @@ This command will:
 
 ---
 
-## ⚙️ Setup
+## Setup
 
 ```bash
 # Apply migrations
@@ -105,16 +105,16 @@ python manage.py seed
 
 ---
 
-## ✅ Status
+##  Status
 
-✅ Models implemented
-✅ Serializers added
-✅ Seeder working
-✅ Fully documented
+- Models implemented
+- Serializers added
+- Seeder working
+- Fully documented
 
 ---
 
-## 📌 Notes
+##  Notes
 
 * Extend serializers to include Review if needed
 * Consider adding DRF viewsets for full API functionality
