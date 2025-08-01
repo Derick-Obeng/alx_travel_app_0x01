@@ -26,7 +26,6 @@ DEBUG = env('DEBUG')
 ALLOWED_HOSTS = env.list("DJANGO_ALLOWED_HOSTS")
 
 
-# Installed apps
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',

@@ -4,6 +4,7 @@ listings/urls.py
 Routes for the listings app – included from project‑level urls.py.
 """
 
+
 from django.urls import path, include
 from .views import ListingListCreateView, ListingViewSet,BookingViewSet
 from rest_framework.routers import DefaultRouter
